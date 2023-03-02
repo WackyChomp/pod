@@ -18,7 +18,7 @@ export const Login: React.FC = () => {
       try {
         window.google.accounts.id.initialize({
           ux_mode: "popup",
-          client_id: "your-client-id",
+          client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
           callback: async (res: CredentialResponse) => {
             if (res.credential) {
               login(res);
@@ -41,11 +41,8 @@ export const Login: React.FC = () => {
   return (
     <Box
       component="div"
-      sx={{
-        background: `radial-gradient(50% 50% at 50% 50%, #63386A 0%, #310438 100%)`,
-        backgroundSize: "cover",
-      }}
-    >
+      sx={{ background: `radial-gradient(50% 50% at 50% 50%, #63386A 0%, #310438 100%)` }}>
+
       <Container
         component="main"
         maxWidth="xs"
@@ -65,7 +62,7 @@ export const Login: React.FC = () => {
           }}
         >
           <div>
-            <img src="./refine.svg" alt="Refine Logo" />
+            <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' alt="Nice Logo!" />
           </div>
           <Box mt={4}>
             <GoogleButton />
