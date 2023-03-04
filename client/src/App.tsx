@@ -10,15 +10,26 @@ import {
   ErrorComponent,
 } from "@pankod/refine-mui";
 
+import { 
+  AccountCircleOutlined, 
+  ChatBubbleOutline, 
+  PeopleAltOutlined, 
+  StarOutlineRounded, 
+  VillaOutlined,
+  ErrorOutlineOutlined
+} from "@mui/icons-material";
+
 import dataProvider from "@pankod/refine-simple-rest";
 import { MuiInferencer } from "@pankod/refine-inferencer/mui";
 import routerProvider from "@pankod/refine-react-router-v6";
 import axios, { AxiosRequestConfig } from "axios";
 import { ColorModeContextProvider } from "contexts";
-import { Title, Sider, Layout, Header } from "components/layout";
-import { Login } from "pages/login";
 import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
+
+import { Title, Sider, Layout, Header } from "components/layout";
+import { Agents, Home, Login, MyProfile, AgentProfile, AllRentals,  RentalDetails } from "pages";
+
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
@@ -96,7 +107,7 @@ function App() {
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
           catchAll={<ErrorComponent />}
-          resources={[
+          resources={[          // Populating the sidebar
             {
               name: "posts",
               list: MuiInferencer,
@@ -105,6 +116,39 @@ function App() {
               create: MuiInferencer,
               canDelete: true,
             },
+            {
+              name: "agents",
+              list: Agents,
+              show: AgentProfile,
+              icon: <PeopleAltOutlined />
+            },
+            {
+              name: "rental",
+              list: AllRentals,
+              show: RentalDetails,
+              icon: <VillaOutlined />
+            },
+            {
+              name: "review",
+              list: Home,
+              icon: <StarOutlineRounded />
+            },
+            {
+              name: "my profile",
+              list: MyProfile,
+              options: { label: 'My Profile' },
+              icon: <AccountCircleOutlined />
+            },
+            {
+              name: "message",
+              list: Home,
+              icon: <ChatBubbleOutline />
+            },
+            {
+              name: "error",
+              list: MuiInferencer,
+              icon: <ErrorOutlineOutlined />
+            }
           ]}
           Title={Title}
           Sider={Sider}
@@ -113,6 +157,7 @@ function App() {
           routerProvider={routerProvider}
           authProvider={authProvider}
           LoginPage={Login}
+          DashboardPage={Home}
         />
       </RefineSnackbarProvider>
     </ColorModeContextProvider>
