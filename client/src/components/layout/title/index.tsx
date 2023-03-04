@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouterContext, TitleProps } from "@pankod/refine-core";
 import { Button } from "@pankod/refine-mui";
+//import logoColorYellow from './src/assets/logoColorYellow.svg';
 
 export const Title: React.FC<TitleProps> = ({ collapsed }) => {
   const { Link } = useRouterContext();
@@ -9,9 +10,9 @@ export const Title: React.FC<TitleProps> = ({ collapsed }) => {
     <Button fullWidth variant="text" disableRipple>
       <Link to="/">
         {collapsed ? (
-          <img src="/refine-collapsed.svg" alt="Refine" width="28px" />
+          <img src='https://media.tenor.com/eqsvEtsUXlMAAAAC/stalzone-stalfos.gif' alt="Refine" width="45px" />
         ) : (
-          <img src="/refine.svg" alt="Refine" width="140px" />
+          <img src='https://media.tenor.com/eqsvEtsUXlMAAAAC/stalzone-stalfos.gif' alt="Refine" height='40px' width="170px" />
         )}
       </Link>
     </Button>
