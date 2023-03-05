@@ -6,13 +6,13 @@
 <br />
 <div align="center" id='readme-top'>
   <a href="https://github.com/WackyChomp/pod">
-    <img src="./client/src/assets/logo-color-pink.svg" alt="Logo" width="80" height="80">
-    <img src="./client/src/assets/logo-no-background-square.svg" alt="Logo" width="80" height="80">
-    <img src="./client/src/assets/logo-no-background-smile.svg" alt="Logo" width="80" height="80">
-    <img src="./client/src/assets/logo-color-yellow.svg" alt="Logo" width="80" height="80">
+    <img src="./client/src/assets/logoColorPink.svg" alt="Logo" width="80" height="80">
+    <img src="./client/src/assets/logoNoBackgroundSquare.svg" alt="Logo" width="80" height="80">
+    <img src="./client/src/assets/logoNoBackgroundSmile.svg" alt="Logo" width="80" height="80">
+    <img src="./client/src/assets/logoColorYellow.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center" id='readme-top'>Best-README-Template</h3>
+  <h3 align="center" id='readme-top'>Prominent Options Delight</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
@@ -69,19 +69,15 @@ Here's why:
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
 * You should implement DRY principles to the rest of your life :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This section includes a list major frameworks/libraries used in this project:
 
-* [![JavaScript][JavaScript]][JavaScript-url]
+* [![TypeScript][TypeScript]][TypeScript-url]
 * [![MongoDB][MongoDB]][MongoDB-url]
 * [![Express][Express.js]][Express-url]
 * [![React][React.js]][React-url]
@@ -165,10 +161,7 @@ See the [open issues](https://github.com/WackyChomp/pod/issues) for a full list 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -199,8 +192,6 @@ Use this space to list resources you find helpful and would like to give credit 
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 

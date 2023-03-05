@@ -28,7 +28,7 @@ import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
 
 import { Title, Sider, Layout, Header } from "components/layout";
-import { Agents, Home, Login, MyProfile, AgentProfile, AllRentals,  RentalDetails } from "pages";
+import { Agents, Home, Login, MyProfile, AgentProfile, AllRentals, CreateRental, EditRental, RentalDetails } from "pages";
 
 
 const axiosInstance = axios.create();
@@ -126,6 +126,8 @@ function App() {
               name: "rental",
               list: AllRentals,
               show: RentalDetails,
+              create: CreateRental,
+              edit: EditRental,
               icon: <VillaOutlined />
             },
             {
