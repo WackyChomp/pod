@@ -1,11 +1,24 @@
-import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { Box, Typography, Stack } from '@pankod/refine-mui';
 import { PieChartProps } from 'interfaces/home'
 
 const PieChart = ({ title, value, series, colors }: PieChartProps ) => {
   return (
-    <Box>
+    <Box
+      id='chart'
+      flex={1}
+      display='flex'
+      bgcolor='gray'
+      flexDirection='row'
+      justifyContent='space-between'
+      alignItems='center'
+      pl={3.5}
+      py={2}
+      gap={2}
+      borderRadius='16px'
+      minHeight='120px'
+      width='fit-content'
+    >
       <Stack direction='column'>
         <Typography fontSize={15} color='blue'>
           {title}
