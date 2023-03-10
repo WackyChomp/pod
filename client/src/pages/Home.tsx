@@ -47,6 +47,7 @@ const Home = () => {
       <Stack
         mt='25px' width='100%'
         direction={{ xs:'column', lg:'row' }}
+        gap={4}
       >
         <TotalRevenue />
         <RentalReferrals />
