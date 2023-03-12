@@ -15,7 +15,7 @@ const AllRentals = () => {
           Rental Spaces
         </Typography>
         <CustomButton 
-          handleClick={() => {} }
+          handleClick={() => navigate('/rentals/create') }
           title='Add Rental Here!!!'
           backgroundColor='green'
           color='gold'
