@@ -16,7 +16,7 @@ const CreateRental = () => {
   const onFinishHandler = () => {}
 
   return (
-    <Form
+    <Form       // Referenced from Form.tsx -> interface common.d.ts
       type='Create'
       register={register}
       onFinish={onFinish}
