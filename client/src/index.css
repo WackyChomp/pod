@@ -1,3 +1,38 @@
+
+:root{      /* Inspiration for colors */
+  font-size: 16px;
+  font-family: "Open Sans";
+
+  --primary-color: rgb(87, 148, 228);     /* azure - rgb(102, 235, 235) */
+  --primary-color: rgb(247, 218, 56);       /* gold */
+  --title-color: black;
+  --text-color: gray;
+  --border-color: indigo;
+
+  /* Gradient Colors */
+  --gradient: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+  --gradient-mango: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  --gradient-puddle: linear-gradient(90deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+  --gradient-flame: linear-gradient(90deg, hsla(52, 82%, 52%, 1) 0%, hsla(1, 92%, 47%, 1) 100%);
+  --gradient-flamingo: linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+
+  /* Other Colors */
+  --dark: #302f25;           /* based on outer space crayola */
+  --gray: #808291;
+  --light: #ece365;
+  --white: #fff;
+  --magenta: magenta;
+  --beige: #BEA57D;
+  --coral: coral;
+  --crimson: rgb(224, 47, 82);              /* rgb(221, 40, 76) */
+  --green: #4acf53;           /* based on mantis */
+  --blue: #3cDBD3;
+  --box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
+  --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+  --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+}
+
+
 * {
     font-family: 'Manrope', sans-serif !important;
   }

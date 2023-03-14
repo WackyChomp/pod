@@ -123,7 +123,7 @@ function App() {
               icon: <PeopleAltOutlined />
             },
             {
-              name: "rental",
+              name: "rentals",
               list: AllRentals,
               show: RentalDetails,
               create: CreateRental,
@@ -131,18 +131,18 @@ function App() {
               icon: <VillaOutlined />
             },
             {
-              name: "review",
-              list: Home,
-              icon: <StarOutlineRounded />
-            },
-            {
-              name: "my profile",
+              name: "my-profile",
               list: MyProfile,
               options: { label: 'My Profile' },
               icon: <AccountCircleOutlined />
             },
             {
-              name: "message",
+              name: "reviews",
+              list: Home,
+              icon: <StarOutlineRounded />
+            },
+            {
+              name: "messages",
               list: Home,
               icon: <ChatBubbleOutline />
             },

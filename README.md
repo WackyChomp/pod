@@ -1,7 +1,6 @@
 # pod
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center" id='readme-top'>
@@ -15,7 +14,7 @@
   <h3 align="center" id='readme-top'>Prominent Options Delight</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Managing your properties and decisions
     <br />
     <a href="https://github.com/WackyChomp/pod"><strong>Explore the docs »</strong></a>
     <br />
@@ -43,8 +42,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites-installation">Prerequisites / Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -62,12 +60,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Searching for an application that will help offload and manage your properties? Tired of paid subscription based dashboards that underperform and meet minimum expectations?
+Look no further with the rental app, <u>Prominent Options Delight (pod)</u>
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+<u><b>Project Purpose / Vision:</b></u>
+* Sleek and responsive design for satisfying seamless user experience
+* Tracking and storing important business metrics for understanding your property positions/status
+* Integration with Google Cloud for accessibility and reliability no matter your situation
+* Utilizing open source React-based framework, <u>Refine</u> for continuous updates and transparent development
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,6 +82,7 @@ This section includes a list major frameworks/libraries used in this project:
 * [![Express][Express.js]][Express-url]
 * [![React][React.js]][React-url]
 * [![Node][Node.js]][Node-url]
+* [![Google-Cloud][Google-Cloud]][Google-Cloud-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -91,33 +92,25 @@ This section includes a list major frameworks/libraries used in this project:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Prerequisites / Installation
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Create Google Client Id at [https://console.cloud.google.com](https://console.cloud.google.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/WackyChomp/pod.git
    ```
 3. Install NPM packages
    ```sh
-   npm install
+   npm install --legacy-peer-deps
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Enter your ID in `.env` (client directory)
+   ```
+   REACT_APP_GOOGLE_CLIENT_ID = 'ENTER YOUR ID FROM GOOGLE CLOUD';
+   ```
+
+5. Running on local computer
+   ```
+    cd client --- npm run dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -127,13 +120,10 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-
 <br>
-<p><u>February 23, 2023</u> - Image added to homepage after creating post</p>
-<img src="./client/src/assets/---------.png"/>
+<p><u>March 10, 2023</u> - Homepage with mock analytics data</p>
+<img <img src="./client/src/assets/img/1-homepage-dashboard.png" />/>
 
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -144,11 +134,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [x] Create Home page with dashboard
+- [ ] Establish routes between different pages
+- [ ] Finalize color scheme
+- [ ] Finalize logo
+- [ ] Deploy project
     - [ ] 
     - [ ] 
 
@@ -194,6 +184,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
+* [Badge Shield](https://dev.to/envoy_/150-badges-for-github-pnk)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,6 +214,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [Tailwind.css]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
 [Tailwind-url]: https://tailwindcss.com/
 
+[Google-Cloud]:https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white
+[Google-cloud-url]: https://console.cloud.google.com
 
 <!-- 
 * [![][]][]

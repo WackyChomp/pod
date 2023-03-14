@@ -246,7 +246,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             sx={{
               justifyContent: "center",
               minWidth: 36,
-              color: "primary.contrastText",
+              color: "purple",
+              marginLeft: '10px',
+              marginRight: '14px'
             }}
           >
             <Dashboard />
@@ -322,7 +324,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
   };
 
   const drawer = (
-    <MuiList disablePadding sx={{ mt: 1, color: "red" }}>
+    <MuiList disablePadding sx={{ mt: 1, color: "pink" }}>
       {renderSider()}
     </MuiList>
   );
