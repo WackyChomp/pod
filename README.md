@@ -14,7 +14,7 @@
   <h3 align="center" id='readme-top'>Prominent Options Delight</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Managing your properties and decisions
     <br />
     <a href="https://github.com/WackyChomp/pod"><strong>Explore the docs »</strong></a>
     <br />
@@ -60,12 +60,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Searching for an application that will help offload and manage your properties? Tired of paid subscription based dashboards that underperform and meet minimum expectations?
+Look no further with the rental app, <u>Prominent Options Delight (pod)</u>
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+<u><b>Project Purpose / Vision:</b></u>
+* Sleek and responsive design for satisfying seamless user experience
+* Tracking and storing important business metrics for understanding your property positions/status
+* Integration with Google Cloud for accessibility and reliability no matter your situation
+* Utilizing open source React-based framework, <u>Refine</u> for continuous updates and transparent development
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,13 +120,10 @@ This section includes a list major frameworks/libraries used in this project:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-
 <br>
-<p><u>February 23, 2023</u> - Image added to homepage after creating post</p>
-<img src="./client/src/assets/---------.png"/>
+<p><u>March 10, 2023</u> - Homepage with mock analytics data</p>
+<img <img src="./client/src/assets/img/1-homepage-dashboard.png" />/>
 
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -135,7 +134,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Create Home page with dashboard
+- [x] Create Home page with dashboard
 - [ ] Establish routes between different pages
 - [ ] Finalize color scheme
 - [ ] Finalize logo

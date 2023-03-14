@@ -7,15 +7,19 @@ import CustomButton from './CustomButton';
 const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, onFinishHandler, rentalImage }: FormProps) => {
   return (
     <Box>
+      {/* Title */}
       <Typography fontSize={25} fontWeight={700} color='orange'>
         {type} a Rental Space
       </Typography>
       
+      {/* Form Container */}
       <Box mt={2.5} borderRadius='15px' padding='20px' bgcolor='pink'>
         <form
           style={{ marginTop:'20px', width:'100%', display:'flex', flexDirection:'column', gap:'20px' }}
           onSubmit={handleSubmit(onFinishHandler)}
         >
+
+          {/* Rental Name */}
           <FormControl>
             <FormHelperText sx={{ fontWeight:500, margin:'10px 0', fontSize:'16px', color:'crimson' }}>
               Enter rental name
@@ -30,6 +34,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
             />
           </FormControl>
 
+          {/* Rental Description */}
           <FormControl>
             <FormHelperText sx={{ fontWeight:500, margin:'10px 0', fontSize:'16px', color:'crimson' }}>
               Enter description
@@ -51,6 +56,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
             />
           </FormControl>
 
+          {/* Rental Type */}
           <Stack direction='row' gap={4}>
             <FormControl sx={{ flex: 1 }}>
               <FormHelperText sx={{ fontWeight:500, margin:'10px 0', fontSize:16, color:'crimson' }}>
@@ -102,7 +108,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
             </FormControl>
 
 
-
+          {/* Rental Price */}
             <FormControl>
               <FormHelperText sx={{ fontWeight:500, margin:'10px 0', fontSize:'16px', color:'crimson' }}>
                 Enter rental price
@@ -121,7 +127,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
           </Stack>
 
 
-          
+          {/* Rental Location */}
           <FormControl>
             <FormHelperText sx={{ fontWeight:500, margin:'10px 0', fontSize:'16px', color:'crimson' }}>
               Enter location
@@ -137,7 +143,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
           </FormControl>
 
 
-
+          {/* Rental Photo */}
           <Stack direction='column' gap={1} justifyContent='center' mb={2}>
             <Stack direction='row' gap={2}>
               <Typography color='purple' fontSize={16} fontWeight={500} my='10px'>
@@ -163,10 +169,10 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
             <Typography fontSize={14} color='yellow' sx={{ wordBreak:'break-all' }}>
               {rentalImage?.name}
             </Typography>
-
           </Stack>
 
 
+          {/* Submission */}
           <CustomButton 
             type='submit'
             title={ formLoading ? 'Submitting...' : 'Submit'}
