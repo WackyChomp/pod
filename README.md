@@ -99,17 +99,22 @@ This section includes a list major frameworks/libraries used in this project:
    ```sh
    git clone https://github.com/WackyChomp/pod.git
    ```
-3. Install NPM packages
+3. Install NPM packages into each client and server directories
    ```sh
-   npm install --legacy-peer-deps
+   npm install
    ```
 4. Enter your ID in `.env` (client directory)
    ```
    REACT_APP_GOOGLE_CLIENT_ID = 'ENTER YOUR ID FROM GOOGLE CLOUD';
    ```
-
-5. Running on local computer
+5. Enter your MongoDB URL Cluster in `.env` (server directory)
    ```
+   MONGODB_URL = 'ENTER YOUR URL FROM MONGODB';
+   ```
+
+6. Running on local computer
+   ```
+    cd server --- npm start
     cd client --- npm run dev
    ```
 
@@ -122,7 +127,7 @@ This section includes a list major frameworks/libraries used in this project:
 
 <br>
 <p><u>March 10, 2023</u> - Homepage with mock analytics data</p>
-<img <img src="./client/src/assets/img/1-homepage-dashboard.png" />/>
+<img <img src="./client/src/assets/img/1-homepage-dashboard.png" />
 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
@@ -135,6 +140,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Create Home page with dashboard
+- [x] Connect backend to MongoDB
 - [ ] Establish routes between different pages
 - [ ] Finalize color scheme
 - [ ] Finalize logo
