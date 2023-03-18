@@ -4,6 +4,9 @@ import cors from 'cors';
 
 import connectDB from './mongodb/connect.js';
 
+import useRouter from './routes/user.routes.js';
+import rentalRouter from './routes/rental.routes.js';
+
 dotenv.config();
 
 const app = express();
@@ -13,6 +16,9 @@ app.use(express.json({ limit: '50mb'}));
 app.get('/', (req, res) => {
     res.send({ message: 'Hello from the other side!'});
 })
+
+app.use('/api/v1/users', useRouter);
+app.use('/api/v1/rentals', rentalRouter);
 
 const startServer = async() => {
 	try {
