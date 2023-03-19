@@ -4,7 +4,7 @@ import cors from 'cors';
 
 import connectDB from './mongodb/connect.js';
 
-import useRouter from './routes/user.routes.js';
+import userRouter from './routes/user.routes.js';
 import rentalRouter from './routes/rental.routes.js';
 
 dotenv.config();
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.send({ message: 'Hello from the other side!'});
 })
 
-app.use('/api/v1/users', useRouter);
+app.use('/api/v1/users', userRouter);
 app.use('/api/v1/rentals', rentalRouter);
 
 const startServer = async() => {
