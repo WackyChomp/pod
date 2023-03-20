@@ -17,35 +17,41 @@ const getRentalDetail = async(req,res) => {}
 
 
 const createRental = async(req,res) => {
-	const { title, description, rentalType, location, price, photo, email } = req.body;      // destructured from server rental.js , req.body is how back/front end speak
+	try {
+		const { title, description, rentalType, location, price, photo, email } = req.body;      // destructured from server rental.js , req.body is how back/front end speak
 
-	// Start new session
-	const session = await mongoose.startSession();			// make sure the creation of rental is atomic transaction , ensure it works/not work
-	session.startTransaction();
+		// Start new session
+		const session = await mongoose.startSession();			// make sure the creation of rental is atomic transaction , ensure it works/not work
+		session.startTransaction();
 
-	const user = await user.findOne({ email }).session(session);			// get user's email
+		const user = await user.findOne({ email }).session(session);			// get user's email
 
-	if(!user) throw new Error('User not found -_- | :O');
+		if(!user) throw new Error('User not found -_- | :O');
 
-	const photoUrl = await cloudinary.uploader.upload(photo);				// Cloudinary
+		const photoUrl = await cloudinary.uploader.upload(photo);				// Cloudinary
 
-	const newRental = await Rental.create({
-		title,
-		description,
-		rentalType,
-		location,
-		price,
-		photo: photoUrl.url,
-		creator: user._id
-	});
+		const newRental = await Rental.create({
+			title,
+			description,
+			rentalType,
+			location,
+			price,
+			photo: photoUrl.url,
+			creator: user._id
+		});
 
-	user.allRental.push(newRental._id);				// updates the user and makes sure id is connected
+		user.allRentals.push(newRental._id);				// updates the user and makes sure id is connected
 
-	await user.save({ session });
-	
-	await session.commitTransaction();				// done with transaction and ready to move on
+		await user.save({ session });
+		
+		await session.commitTransaction();				// done with transaction and ready to move on
 
-	res.status(200).json({ message: 'Rental has been successfully created!' });
+		res.status(200).json({ message: 'Rental has been successfully created!' });
+
+	} catch (error) {
+		res.status(500).json({ message: error.message })
+	}
+
 }
 
 
