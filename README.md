@@ -103,13 +103,17 @@ This section includes a list major frameworks/libraries used in this project:
    ```sh
    npm install
    ```
-4. Enter your ID in `.env` (client directory)
+4. Enter your <u>Google ID</u> in `.env` (client directory)
    ```
-   REACT_APP_GOOGLE_CLIENT_ID = 'ENTER YOUR ID FROM GOOGLE CLOUD';
+    REACT_APP_GOOGLE_CLIENT_ID = 'ENTER YOUR GOOGLE CLOUD ID';
    ```
-5. Enter your MongoDB URL Cluster in `.env` (server directory)
+5. Enter your <u>MongoDB URL Cluster</u> and <u>Cloudinary credentials</u> in `.env` (server directory)
    ```
-   MONGODB_URL = 'ENTER YOUR URL FROM MONGODB';
+    MONGODB_URL = ENTER YOUR URL FROM MONGODB;
+
+    CLOUDINARY_CLOUD_NAME = ENTER CLOUDINARY CREDENTIALS
+    CLOUDINARY_API_KEY = ENTER CLOUDINARY CREDENTIALS
+    CLOUDINARY_API_SECRET = ENTER CLOUDINARY CREDENTIALS
    ```
 
 6. Running on local computer
@@ -141,7 +145,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [x] Create Home page with dashboard
 - [x] Connect backend to MongoDB
-- [ ] Establish routes between different pages
+- [x] Establish routes between different pages
+- [ ] Create first rental post
 - [ ] Finalize color scheme
 - [ ] Finalize logo
 - [ ] Deploy project
