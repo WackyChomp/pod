@@ -11,9 +11,21 @@ const CreateRental = () => {
   const [rentalImage, setRentalImage] = useState({ name:'', url:'' })
   const { refineCore: { onFinish, formLoading }, register, handleSubmit } = useForm();
 
-  const handleImageChange = () => {}
 
-  const onFinishHandler = () => {}
+  // fileReader boilerplate
+  const handleImageChange = (file: File) => {
+    const reader = (readFile: File) => new Promise<string>((resolve, reject) => {
+      const fileReader = new FileReader();
+      fileReader.onload = () => resolve(fileReader.result as string);
+      fileReader.readAsDataURL(readFile);
+    });}
+  
+  // backend creating record for database
+  const onFinishHandler = async (data: FieldValues) => {
+    if(!rentalImage.name) return alert('Please add an image');
+
+    await onFinish({ ...data, photo: rentalImage.url, email:user.email })
+  }
 
   return (
     <Form       // Referenced from Form.tsx -> interface common.d.ts

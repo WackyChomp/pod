@@ -14,10 +14,10 @@ export interface ProfileProps {
     name: string,
     avatar: string,
     email: string,
-    properties: Array | undefined
+    rentals: Array | undefined
 }
 
-export interface PropertyProps {
+export interface RentalProps {
     _id: string,
     title: string,
     description: string,

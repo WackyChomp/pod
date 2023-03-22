@@ -1,5 +1,5 @@
 /* eslint-disable no-plusplus */
-import { FormValues } from 'interfaces/property';
+import { FormValues } from 'interfaces/rental';
 
 export const validateForm = (formValues: FormValues) => {
   const errors: { message: string } = { message: '' };
@@ -21,8 +21,8 @@ export const validateForm = (formValues: FormValues) => {
         }
         break;
 
-      case 'propertyType':
-        if (!formValues.propertyType) {
+      case 'rentalType':
+        if (!formValues.rentalType) {
           errors.message = 'Property type is required';
           hasError = true;
         }
