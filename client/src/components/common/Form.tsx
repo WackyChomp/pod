@@ -160,7 +160,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                   type='file'
                   onChange={(e) => { 
                   //@ts-ignore
-                    handleImageChange(e.target[0])
+                    handleImageChange(e.target.files[0])
                   }}
                 />
               </Button>

@@ -18,7 +18,12 @@ const CreateRental = () => {
       const fileReader = new FileReader();
       fileReader.onload = () => resolve(fileReader.result as string);
       fileReader.readAsDataURL(readFile);
-    });}
+    });
+  
+    reader(file).then((result:string) => setRentalImage({ name: file?.name, url: result }));
+
+  };
+  
   
   // backend creating record for database
   const onFinishHandler = async (data: FieldValues) => {
